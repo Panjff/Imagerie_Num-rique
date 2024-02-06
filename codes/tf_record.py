@@ -1,8 +1,8 @@
 import subprocess
 
-WORKSPACE_PATH = 'C:/Users/22170/Documents/_project/workspace'
-SCRIPTS_PATH = 'C:/Users/2217/Documents/Sign_project/'
-APIMODEL_PATH = 'C:/Users/2170/Documents/Sign_/models'
+WORKSPACE_PATH = '/Sign_project/workspace'
+SCRIPTS_PATH = '/Sign_project/codes'
+APIMODEL_PATH = '/Sign_/models'
 ANNOTATION_PATH = WORKSPACE_PATH + '/annotations'
 IMAGE_PATH = WORKSPACE_PATH + '/Images'
 MODEL_PATH = WORKSPACE_PATH + '/models'

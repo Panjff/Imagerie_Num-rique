@@ -6,15 +6,15 @@ from object_detection.utils import visualization_utils as viz_utils
 from cognitive_planning import label_map_util
 import detection_model
 
-WORKSPACE_PATH = 'C:/Users/22170/Documents/Sign_project/workspace'
-SCRIPTS_PATH = 'C:/Users/22170/Documents/Sign_project/codes'
-APIMODEL_PATH = 'C:/Users/22170/Documents/Sign_project/models'
-ANNOTATION_PATH = WORKSPACE_PATH+'/annotations'
-IMAGE_PATH = WORKSPACE_PATH+'/Images'
-MODEL_PATH = WORKSPACE_PATH+'/models'
-PRETRAINED_MODEL_PATH = WORKSPACE_PATH+'/pre-trained-models'
-CONFIG_PATH = MODEL_PATH+'/ssd_mobnet/pipeline.config'
-CHECKPOINT_PATH = MODEL_PATH+'/ssd_mobnet/'
+WORKSPACE_PATH = '/Sign_project/workspace'
+SCRIPTS_PATH = '/Sign_project/codes'
+APIMODEL_PATH = '/Sign_/models'
+ANNOTATION_PATH = WORKSPACE_PATH + '/annotations'
+IMAGE_PATH = WORKSPACE_PATH + '/Images'
+MODEL_PATH = WORKSPACE_PATH + '/models'
+PRETRAINED_MODEL_PATH = WORKSPACE_PATH + '/pre-trained-models'
+CONFIG_PATH = MODEL_PATH + '/ssd_mobnet/pipeline.config'
+CHECKPOINT_PATH = MODEL_PATH + '/ssd_mobnet/'
 
 category_index = label_map_util.create_category_index_from_labelmap(ANNOTATION_PATH+'/label_map.pbtxt')
 

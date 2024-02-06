@@ -10,7 +10,7 @@ import json
 import argparse
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppress TensorFlow logging (1)
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v2 as tf
 from PIL import Image
 from object_detection.utils import dataset_util, label_map_util
 from collections import namedtuple
@@ -142,7 +142,7 @@ def main(_):
 
     writer = tf.python_io.TFRecordWriter(args.output_path)
     path = os.path.join(args.image_dir)
-    examples = xml_to_csv(args.xml_dir)
+    examples = json_to_csv(args.json_dir)
     grouped = split(examples, 'filename')
     for group in grouped:
         tf_example = create_tf_example(group, path)
